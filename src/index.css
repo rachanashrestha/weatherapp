@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #fce4ec; 
+  --secondary-color: #ff6f91; 
+  --tertiary-color: #fffafc; 
+  --accent-color: #a5d8ff; 
+  --text-color: #4d4d4d; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Neue', 'Poppins', 'Roboto', sans-serif;
+  background-color: var(--primary-color);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  padding-top: 100px;
+}
+
+.header {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 48px;
+  color: var(--secondary-color);
+}
+
+.header p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+img {
+  width: 160px;
+  height: 160px;
+  border: 4px solid var(--accent-color);
+  border-radius: 50%;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.find-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  padding: 14px 30px;
+  height: auto;
+  width: 250px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.weather-info {
+  text-align: center;
+  margin-top: 30px;
+  background-color: var(--secondary-color);
+  padding: 20px 40px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.weather-info h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 20px;
+  margin: 6px 0;
+}
